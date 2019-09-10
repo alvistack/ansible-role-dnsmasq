@@ -17,3 +17,8 @@
 # Change this line if you want dns to get its upstream servers from
 # somewhere other that /etc/resolv.conf
 dnsmasq_resolv_file: "{{ _dnsmasq_resolv_file }}"
+
+# Specify IP address of upstream servers directly.
+dnsmasq_server:
+  - "8.8.8.8"
+  - "8.8.4.4"

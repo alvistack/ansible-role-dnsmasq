@@ -63,13 +63,10 @@ resolv-file={{ dnsmasq_resolv_file }}
 # files for changes and re-read them then uncomment this.
 #no-poll
 
-# Add other name servers here, with domain specs if they are for
-# non-public domains.
-#server=/localnet/192.168.0.1
-
-# Example of routing PTR queries to nameservers: this will send all
-# address->name queries for 192.168.3/24 to nameserver 10.1.2.3
-#server=/3.168.192.in-addr.arpa/10.1.2.3
+# Specify IP address of upstream servers directly.
+{% for server in dnsmasq_server %}
+server={{ server | ipaddr }}
+{% endfor %}
 
 # Add local-only domains here, queries in these domains are answered
 # from /etc/hosts or DHCP only.
@@ -86,15 +83,6 @@ resolv-file={{ dnsmasq_resolv_file }}
 # Add the IPs of all queries to yahoo.com, google.com, and their
 # subdomains to the vpn and search ipsets:
 #ipset=/yahoo.com/google.com/vpn,search
-
-# You can control how dnsmasq talks to a server: this forces
-# queries to 10.1.2.3 to be routed via eth1
-# server=10.1.2.3@eth1
-
-# and this sets the source (ie local) address used to talk to
-# 10.1.2.3 to 192.168.1.1 port 55 (there must be an interface with that
-# IP on the machine, obviously).
-# server=10.1.2.3@192.168.1.1#55
 
 # If you want dnsmasq to change uid and gid to something other
 # than the default, edit the following lines.
