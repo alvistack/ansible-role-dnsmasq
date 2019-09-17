@@ -18,6 +18,7 @@ _zypper: [
   { state: "latest", name: "bind-utils" },
   { state: "latest", name: "dnsmasq" },
   { state: "latest", name: "net-tools" },
+  { state: "latest", name: "net-tools-deprecated" },
 ]
 
 _dnsmasq_resolv_file: "/etc/resolv.conf"
