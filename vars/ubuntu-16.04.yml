@@ -14,10 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_apt: [
-  { state: "latest", name: "dnsmasq" },
-  { state: "latest", name: "dnsutils" },
-  { state: "latest", name: "net-tools" },
-]
+_apt:
+  - { state: "latest", name: "dnsmasq" }
+  - { state: "latest", name: "dnsutils" }
+  - { state: "latest", name: "net-tools" }
 
 _dnsmasq_resolv_file: "/var/run/dnsmasq/resolv.conf"
