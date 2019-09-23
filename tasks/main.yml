@@ -92,14 +92,14 @@
   ignore_errors: true
   tags: dnsmasq
 
-- name: flush handlers
-  meta: flush_handlers
-  tags: dnsmasq
-
 - name: enable service
   service:
     name: "dnsmasq"
     enabled: true
   changed_when: false
   ignore_errors: true
+  tags: dnsmasq
+
+- name: flush handlers
+  meta: flush_handlers
   tags: dnsmasq
