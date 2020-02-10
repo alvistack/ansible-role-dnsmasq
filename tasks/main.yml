@@ -83,15 +83,6 @@
     - { dest: "/etc/dnsmasq.conf" }
   tags: dnsmasq
 
-- name: disable service
-  service:
-    name: "systemd-resolved"
-    state: "stopped"
-    enabled: false
-  changed_when: false
-  ignore_errors: true
-  tags: dnsmasq
-
 - name: enable service
   service:
     name: "dnsmasq"
