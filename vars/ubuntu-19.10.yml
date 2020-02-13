@@ -14,11 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- hosts: all
-  remote_user: root
-  become: true
-  roles:
-    - role: bootstrap
-    - role: locales
-    - role: timezone
-    - role: dnsmasq
+_apt:
+  - { state: "latest", name: "dnsmasq" }
+  - { state: "latest", name: "dnsutils" }
+  - { state: "latest", name: "net-tools" }
+
+_dnsmasq_resolv_file: "/run/systemd/resolve/resolv.conf"

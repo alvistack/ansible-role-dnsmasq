@@ -17,8 +17,8 @@
 - hosts: all
   remote_user: root
   become: true
-  roles:
-    - role: bootstrap
-    - role: locales
-    - role: timezone
-    - role: dnsmasq
+  tasks:
+    - name: dnsmasq --version
+      command: dnsmasq --version
+      register: result
+      changed_when: result is not succeeded
