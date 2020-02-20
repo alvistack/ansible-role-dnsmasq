@@ -83,15 +83,22 @@
     - { dest: "/etc/dnsmasq.conf" }
   tags: dnsmasq
 
+- name: enable service
+  service:
+    name: "dnsmasq"
+    enabled: true
+  changed_when: false
+  ignore_errors: true
+  tags: dnsmasq
+
 - name: flush handlers
   meta: flush_handlers
   tags: dnsmasq
 
-- name: enable service
+- name: start service
   service:
     name: "dnsmasq"
     state: "started"
-    enabled: true
   changed_when: false
   ignore_errors: true
   tags: dnsmasq
