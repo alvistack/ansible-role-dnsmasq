@@ -87,7 +87,7 @@
   meta: flush_handlers
   tags: dnsmasq
 
-- name: enable service
+- name: start service
   service:
     name: "dnsmasq"
     state: "started"
