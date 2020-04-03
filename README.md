@@ -1,6 +1,6 @@
 # Ansible Role for Dnsmasq
 
-[![Travis](https://img.shields.io/travis/alvistack/ansible-role-dnsmasq.svg)](https://travis-ci.org/alvistack/ansible-role-dnsmasq)
+[![Travis](https://img.shields.io/travis/com/alvistack/ansible-role-dnsmasq.svg)](https://travis-ci.com/alvistack/ansible-role-dnsmasq)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-dnsmasq.svg)](https://github.com/alvistack/ansible-role-dnsmasq)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-dnsmasq.svg)](https://github.com/alvistack/ansible-role-dnsmasq/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.dnsmasq-blue.svg)](https://galaxy.ansible.com/alvistack/dnsmasq)
