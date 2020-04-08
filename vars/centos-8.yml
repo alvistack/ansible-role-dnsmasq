@@ -14,14 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- name: bootstrap
-  src: https://github.com/alvistack/ansible-role-bootstrap
-  version: develop
+_yum:
+  - { state: "latest", name: "bind-utils" }
+  - { state: "latest", name: "dnsmasq" }
+  - { state: "latest", name: "net-tools" }
 
-- name: locales
-  src: https://github.com/alvistack/ansible-role-locales
-  version: develop
-
-- name: timezone
-  src: https://github.com/alvistack/ansible-role-timezone
-  version: develop
+_dnsmasq_resolv_file: "/etc/resolv.conf"
