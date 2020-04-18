@@ -87,7 +87,7 @@
   meta: flush_handlers
   tags: dnsmasq
 
-- name: start service
+- name: systemctl start dnsmasq
   service:
     name: "dnsmasq"
     state: "started"
