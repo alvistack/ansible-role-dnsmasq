@@ -83,10 +83,6 @@
     - { dest: "/etc/dnsmasq.conf" }
   tags: dnsmasq
 
-- name: flush handlers
-  meta: flush_handlers
-  tags: dnsmasq
-
 - name: systemctl start dnsmasq
   service:
     name: "dnsmasq"
@@ -94,4 +90,8 @@
     enabled: true
   changed_when: false
   ignore_errors: true
+  tags: dnsmasq
+
+- name: flush handlers
+  meta: flush_handlers
   tags: dnsmasq
