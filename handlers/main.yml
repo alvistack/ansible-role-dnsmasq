@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- name: dnsmasq | systemctl restart
+- name: dnsmasq | systemctl restart dnsmasq
   service:
     name: "dnsmasq"
     state: "restarted"
