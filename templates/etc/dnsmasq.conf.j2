@@ -66,7 +66,7 @@ resolv-file={{ dnsmasq_resolv_file }}
 # Specify IP address of upstream servers directly.
 {% for server in dnsmasq_server %}
 server={{ server | ipaddr }}
-{% endfor %}
+{% endfor -%}
 
 # Add local-only domains here, queries in these domains are answered
 # from /etc/hosts or DHCP only.
@@ -75,7 +75,7 @@ server={{ server | ipaddr }}
 # Specify an IP address to return for any host in the given domains.
 {% for address in dnsmasq_address %}
 address={{ address }}
-{% endfor %}
+{% endfor -%}
 
 # Add the IPs of all queries to yahoo.com, google.com, and their
 # subdomains to the vpn and search ipsets:
