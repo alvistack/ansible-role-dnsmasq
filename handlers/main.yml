@@ -14,9 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- name: dnsmasq | systemctl restart dnsmasq
+- name: dnsmasq | systemctl restart dnsmasq.service
   service:
-    name: "dnsmasq"
+    name: "dnsmasq.service"
     state: "restarted"
     enabled: true
   loop: "{{ ansible_play_hosts }}"

@@ -69,7 +69,7 @@
   loop:
     - { dest: "/etc/dnsmasq.conf" }
   notify:
-    - dnsmasq | systemctl restart dnsmasq
+    - dnsmasq | systemctl restart dnsmasq.service
   tags: dnsmasq
 
 - name: prepare files
@@ -83,9 +83,9 @@
     - { dest: "/etc/dnsmasq.conf" }
   tags: dnsmasq
 
-- name: systemctl start dnsmasq
+- name: systemctl start dnsmasq.service
   service:
-    name: "dnsmasq"
+    name: "dnsmasq.service"
     state: "started"
     enabled: true
   changed_when: false
