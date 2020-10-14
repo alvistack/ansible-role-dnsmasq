@@ -25,4 +25,3 @@
   until: result is succeeded
   notify:
     - dnsmasq | systemctl restart dnsmasq.service
-  tags: dnsmasq
