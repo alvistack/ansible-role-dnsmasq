@@ -1,6 +1,6 @@
 # Ansible Role for Dnsmasq
 
-[![Travis](https://img.shields.io/travis/com/alvistack/ansible-role-dnsmasq.svg)](https://travis-ci.com/alvistack/ansible-role-dnsmasq)
+[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-dnsmasq/master)](https://gitlab.com/alvistack/ansible-role-dnsmasq/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-dnsmasq.svg)](https://github.com/alvistack/ansible-role-dnsmasq/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-dnsmasq.svg)](https://github.com/alvistack/ansible-role-dnsmasq/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.dnsmasq-blue.svg)](https://galaxy.ansible.com/alvistack/dnsmasq)
@@ -13,11 +13,11 @@ This role require Ansible 2.10 or higher.
 
 This role was designed for:
 
-  - Ubuntu 18.04/20.04
+  - Ubuntu 18.04/20.04/20.10
   - RHEL/CentOS 7/8
   - openSUSE Leap 15.2
   - Debian 10
-  - Fedora 32
+  - Fedora 33
 
 ## Role Variables
 
