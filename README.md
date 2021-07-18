@@ -1,9 +1,13 @@
 # Ansible Role for Dnsmasq
 
-[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-dnsmasq/master)](https://gitlab.com/alvistack/ansible-role-dnsmasq/-/pipelines)
-[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-dnsmasq.svg)](https://github.com/alvistack/ansible-role-dnsmasq/releases)
-[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-dnsmasq.svg)](https://github.com/alvistack/ansible-role-dnsmasq/blob/master/LICENSE)
-[![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.dnsmasq-blue.svg)](https://galaxy.ansible.com/alvistack/dnsmasq)
+[![Gitlab pipeline
+status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-dnsmasq/master)](https://gitlab.com/alvistack/ansible-role-dnsmasq/-/pipelines)
+[![GitHub
+release](https://img.shields.io/github/release/alvistack/ansible-role-dnsmasq.svg)](https://github.com/alvistack/ansible-role-dnsmasq/releases)
+[![GitHub
+license](https://img.shields.io/github/license/alvistack/ansible-role-dnsmasq.svg)](https://github.com/alvistack/ansible-role-dnsmasq/blob/master/LICENSE)
+[![Ansible
+Role](https://img.shields.io/badge/galaxy-alvistack.dnsmasq-blue.svg)](https://galaxy.ansible.com/alvistack/dnsmasq)
 
 Ansible Role for Dnsmasq Management.
 
@@ -39,7 +43,8 @@ This role could simply deploy to `localhost` as below:
 ## License
 
   - Code released under [Apache License 2.0](LICENSE)
-  - Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+  - Docs released under [CC
+    BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 ## Author Information
 
