@@ -1,5 +1,7 @@
 # Ansible Role for Dnsmasq
 
+<img src="/alvistack.svg" width="75" alt="AlviStack">
+
 [![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-dnsmasq/master)](https://gitlab.com/alvistack/ansible-role-dnsmasq/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-dnsmasq.svg)](https://github.com/alvistack/ansible-role-dnsmasq/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-dnsmasq.svg)](https://github.com/alvistack/ansible-role-dnsmasq/blob/master/LICENSE)
