@@ -15,7 +15,7 @@
 # limitations under the License.
 
 - name: dnsmasq | systemctl restart dnsmasq.service
-  service:
+  ansible.builtin.service:
     name: "dnsmasq.service"
     state: "restarted"
     enabled: true
