@@ -19,6 +19,6 @@
   become: true
   tasks:
     - name: dnsmasq --version
-      command: dnsmasq --version
+      ansible.builtin.command: dnsmasq --version
       register: result
       changed_when: result is not succeeded
