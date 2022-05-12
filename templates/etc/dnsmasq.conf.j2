@@ -65,7 +65,7 @@ resolv-file={{ dnsmasq_resolv_file }}
 
 # Specify IP address of upstream servers directly.
 {% for server in dnsmasq_server %}
-server={{ server | ansible.utils.ipaddr }}
+server={{ server }}
 {% endfor %}
 
 # Add local-only domains here, queries in these domains are answered
