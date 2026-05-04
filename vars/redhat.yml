@@ -16,5 +16,5 @@
 
 _dnsmasq_resolv_file: /etc/resolv.conf
 
-_yum:
+_dnf:
   - { state: latest, name: dnsmasq }
